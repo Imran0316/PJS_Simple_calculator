@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #output{
+    width: 70%;
+    height: 80px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+
+   }
+   body{
+      background-color: #f4f4f4;
+   }
+   #Myform{
+      max-width: 500px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+
+   }
+   input{
+      width: 100%;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+       padding: 10px 0px;
+      border: none;
+      font-size: 18px;
+      font-weight: bolder;
+   }
+   label{
+      font-size: 22px;
+      font-weight: thin;
+   }
+   button{
+      padding: 10px 30px ;
+      background-color: black;
+      color: white;
+      font-size: 18px;
+      margin-top: 20px;
+      border-radius: 5px;
+      transition: all .5s ease;
+      
+   }
+   button:hover{
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 8);
+      border: black;
+      color: black;
+      background-color: white;
+      
+   }
+</style>
+<body>
+   <h1>Enter values</h1>
+<form action="" id="Myform">
+   <label for="Fvalue">First value:</label>
+   <input type="text" id="Fvalue">
+ 
+   <label for="Esign">Enter Sign:</label>
+   <p>only perform: +, -, /, *</p>
+   <input type="text" id="Esign">
+
+   <label for="Svalue">Second value:</label>
+   <input type="text" id="Svalue">
+</form>
+<button type="submit" onclick="calcul()" >Result</button>
+
+<p id="output"></p>
+
+<script src="main.js"></script>
+</body>
+</html>
